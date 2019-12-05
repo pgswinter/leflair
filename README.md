@@ -11,6 +11,8 @@ to install package npm. Next step:
 Launch on localhost. Typing command:
 
 ### yarn run dev
+or
+### npm run dev
 
 Step by step data flow screen:
 
