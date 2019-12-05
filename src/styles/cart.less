@@ -1,0 +1,35 @@
+.cart {
+    >.row {
+        padding: 15px 15px 0 15px;
+
+        div[class*="col-"] {
+            font-size: 1rem;
+
+            &.item {
+                border-bottom : 1px solid @line1;
+                padding-bottom: 15px;
+                margin-bottom : 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &.handleQuantity {
+                display: flex;
+
+                button {
+                    margin-right: 5px;
+                    font-weight : 100;
+                    text-align  : center;
+                    line-height : 0;
+                }
+            }
+
+            p {
+                padding: 0;
+                margin : 0;
+            }
+        }
+    }
+}

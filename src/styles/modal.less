@@ -1,0 +1,35 @@
+.myModal {
+    width           : 500px;
+    background-color: #fff;
+    box-shadow      : 0 19px 22px -15px @bg2;
+    position        : fixed;
+    top             : 50%;
+    left            : 50%;
+    transform       : translate(-50%, -50%);
+    z-index         : 3;
+
+    input,
+    textarea {
+        width      : 100%;
+        padding    : 15px 0;
+        text-indent: 15px;
+        border     : none;
+        font-size  : 1.3em;
+    }
+}
+
+.handleModal {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    .row {
+        label {
+            width     : 100%;
+            display   : block;
+            text-align: center;
+        }
+    }
+}

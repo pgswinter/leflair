@@ -1,0 +1,33 @@
+.form {
+    width : 700px;
+    margin: 60px auto;
+
+    .row {
+        &.errorField {
+            label {
+                margin : 0;
+                padding: 0;
+            }
+        }
+    }
+
+    div[class="col-md-3"] {
+        display        : flex;
+        align-items    : center;
+        justify-content: flex-start;
+
+        label {
+            margin-bottom: 0;
+            height       : 100%;
+        }
+    }
+
+    div[class="col-md-9"] {
+        position: relative;
+
+        input[type="text"] {
+            width  : 100%;
+            padding: 0 15px;
+        }
+    }
+}

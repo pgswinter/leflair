@@ -1,0 +1,46 @@
+.header {
+    .navbar__header {
+        height         : 56px;
+        overflow       : hidden;
+        display        : flex;
+        justify-content: center;
+        border-bottom  : 1px solid @line1;
+
+        .container {
+            display: flex;
+            align-items: center;
+            
+            .logo__navbar {
+                flex: 1 1 0%;
+
+                a {
+                    padding: 8px;
+                }
+            }
+
+            .icon__navbar {
+                justify-content: flex-end;
+                align-items    : center;
+            }
+        }
+
+    }
+
+    .menu-bar__header {
+        border-bottom: 1px solid @line1;
+
+        ul {
+            display      : flex;
+            margin-bottom: 0;
+
+            li {
+                font-size: 1em;
+                padding  : 15px 8px;
+
+                a {
+                    color: @txt1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.card {
+    h3 {
+        font-weight   : 100;
+        text-transform: uppercase;
+    }
+
+    .info__card {
+        margin: 30px 0;
+
+        label {
+            text-transform: uppercase;
+        }
+
+        span {
+            font-weight: 500;
+        }
+
+        .leftLayout {
+            border     : 1px solid @line1;
+            padding    : 15px;
+            margin-left: 15px;
+        }
+    }
+
+    .table__cart {
+        margin-bottom: 30px;
+
+        table {
+            text-align: center;
+
+            thead {
+                tr {
+                    th {
+                        padding         : 15px 20px;
+                        background-color: @bg1;
+                        color           : #fff;
+                        font-weight     : 100;
+                    }
+                }
+
+            }
+
+            tbody {
+                tr {
+                    td {
+                        padding: 15px;
+
+                        &.imgWrap {
+                            width  : 200px;
+                            padding: 15px 0;
+
+                            img {
+                                border: 1px solid @line1;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            tfoot {
+                background-color: @bg1;
+
+                tr {
+                    td {
+                        padding: 15px 20px;
+                        color  : #fff;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.footer {
+    padding         : 30px 0;
+    background-color: @bg1;
+
+    .landingTop {
+        display      : flex;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+        .branding__landingTop {
+            flex: 0 0 20%;
+        }
+
+        .contact__landingTop {
+            display: flex;
+
+            ul {
+                display       : flex;
+                flex-direction: column;
+
+                li {
+                    &:first-child {
+                        margin-bottom: 20px;
+                        color        : #fff;
+                        font-size    : 1em;
+                        font-weight  : 700;
+                    }
+
+                    a {
+                        color    : #fff;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .landingBot {
+        display    : flex;
+        padding-top: 30px;
+
+        ul {
+            display: flex;
+
+            li {
+                flex     : 0 0 33.33%;
+                color    : #fff;
+                font-size: 0.8em;
+
+                &:not(:first-child) {
+                    padding-right: 30px;
+                }
+
+                &:first-child {
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

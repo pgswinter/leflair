@@ -2,17 +2,13 @@ import React from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
 
-import { reqFetch } from '../src/actions/leflair/actions'
-import Home from '../src/components/Home'
-import { Container } from 'react-bootstrap';
+import InfoCard from "../src/components/InfoCard";
 
-class Index extends React.Component {
+class Confirm extends React.Component {
     static async getInitialProps(props) {
         const {
-            store,
             isServer,
         } = props.ctx;
-        store.dispatch(reqFetch());
         return {
             isServer
         }
@@ -24,20 +20,16 @@ class Index extends React.Component {
             activeModal,
             closeModal,
         } = this.props;
-
-        return <Container>
-            <Home
-                linkTo="/checkout"
-                isServer={isServer}
-                activeModal={activeModal}
-                closeModal={closeModal}
-            />
-        </Container>
-
+        return <InfoCard
+            linkTo="/checkout"
+            isServer={isServer}
+            activeModal={activeModal}
+            closeModal={closeModal}
+        />
     }
 }
 
-Index.propTypes = {
+Confirm.propTypes = {
     closeModal: PropTypes.func,
     activeModal: PropTypes.bool,
     isServer: PropTypes.bool
@@ -45,4 +37,4 @@ Index.propTypes = {
 
 export default connect(state => {
     return state
-})(Index)
+})(Confirm)

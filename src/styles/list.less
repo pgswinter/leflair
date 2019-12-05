@@ -1,0 +1,43 @@
+.list {
+    padding: 60px 0;
+
+    p {
+        margin-bottom: 5px;
+    }
+
+    .split {
+        display   : flex;
+        min-height: 145px;
+
+        .left__split {
+            flex: 1 1 0%;
+
+            .title {
+                margin-top    : 15px;
+                text-transform: uppercase;
+                font-weight   : 100;
+            }
+
+            .boldTxt {
+                color      : @txt2;
+                font-weight: 100;
+
+            }
+        }
+
+        .right__split {
+            display        : flex;
+            justify-content: flex-end;
+
+            button {
+                height          : 100%;
+                background-color: @txt2;
+                border-radius   : 0;
+                color           : #fff;
+            }
+
+        }
+    }
+
+
+}
